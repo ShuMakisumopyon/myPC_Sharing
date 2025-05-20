@@ -1,0 +1,45 @@
+.chef {
+  /* CHEFのフォントサイズを変更 */
+  font-size: 36px;
+
+  /* フォントの太さ600 */
+  font-weight: 600;
+}
+
+/* addクラスのあとに"シェフ"を追加 */
+.add::after {
+  content: "シェフ";
+}
+
+/* 「section_titleに疑似要素を追加」の「.section_title::after」のあとに続け
+て「.add::after」を追加？もしくは一から打つ */
+
+
+/* section_titleに擬似要素を追加 */
+.add::after {
+ 
+/* 疑似要素はデフォルトでインライン要素のためブロック要素に変更 */
+display: block;
+ 
+/* サブタイトル文字の大きさや余白を設定 */
+font-size: 14px;
+font-weight: 400;
+padding: 16px 0 16px;
+ 
+/* 下線の幅を100pに設定 */
+width: 100px;
+ 
+/* 下線を直線・1px・黒色に設定 */
+border-bottom: solid 1px #000000;
+}
+
+/* セクションタグに背景色を設定 */
+.kadai {
+  background-color: #FDF5E6;
+}
+
+
+/* フォントファミリーを設定する */
+.font {
+  font-family: 'Lora', serif;
+}
